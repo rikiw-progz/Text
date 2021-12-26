@@ -41,11 +41,11 @@ public class TextToDisplay : MonoBehaviour
 
         int randomTextIndex = Random.Range(0, textsToUse.Count);
 
-        string wantedString = gameManager.GetComponent<RandomWord>().RandomString(textsToUse[randomTextIndex]);
+        string wantedString = RandomWord.RandomString(textsToUse[randomTextIndex]);
 
         if (wantedString != null && wantedString != "")
         {
-            textsToUse[randomTextIndex] = gameManager.GetComponent<ReplaceWord>().ReplaceString(textsToUse[randomTextIndex], wantedString, "______");
+            textsToUse[randomTextIndex] = ReplaceWord.ReplaceString(textsToUse[randomTextIndex], wantedString, "______");
         }
         else
         {

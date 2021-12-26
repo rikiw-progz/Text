@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Points : MonoBehaviour
 {
+    [HideInInspector]
     public int points;
 
+    [HideInInspector]
     public List<string> usedString = new List<string>();
 
     // To avoid multiple objects of same type

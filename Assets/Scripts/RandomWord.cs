@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomWord : MonoBehaviour
+public static class RandomWord
 {
     // Get text and divide into words
     // Get random one
     // If word consist only from letters
-    public string RandomString(string text)
+    public static string RandomString(string text)
     {
         string[] randomStrings = text.Split(' ');
 
@@ -27,7 +27,7 @@ public class RandomWord : MonoBehaviour
 
 
     // Is it all Letters?
-    public bool IsAllLetters(string s)
+    public static bool IsAllLetters(string s)
     {
         foreach (char c in s)
         {
